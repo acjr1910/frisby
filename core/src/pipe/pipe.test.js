@@ -1,17 +1,17 @@
-import compose from './index'
+import pipe from './index'
 
-describe('compose', () => {
-  it('should evaluate functions from right to left', () => {
+describe('pipe', () => {
+  it('should evaluate functions from left to right', () => {
     const joinString = (str) => str.join('')
     const splitString = (str) => str.split('')
     const reverseString = (str) => str.reverse()
     const uppercaseString = (str) => str.toUpperCase()
 
-    const result = compose(
-      uppercaseString,
-      joinString,
+    const result = pipe(
+      splitString,
       reverseString,
-      splitString
+      joinString,
+      uppercaseString
     )('Hello World!')
 
     expect(result).toBe('!DLROW OLLEH')
