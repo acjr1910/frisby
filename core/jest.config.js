@@ -1,5 +1,6 @@
+const packageJson = require('./package.json')
+
 module.exports = {
-  transform: {
-    "^.+\\.js$": "babel-jest",
-  },
-};
+  name: packageJson.name,
+  displayName: packageJson.name,
+}
