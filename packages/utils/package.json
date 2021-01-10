@@ -1,7 +1,7 @@
 {
   "name": "@frisby/utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "Frisby utility functions.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
