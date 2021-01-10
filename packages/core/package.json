@@ -1,7 +1,7 @@
 {
   "name": "@frisby/core",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Frisby core functions.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
