@@ -40,7 +40,7 @@
     "**/*.js": [
       "prettier --write",
       "eslint --fix",
-      "jest --bail --findRelatedTests"
+      "npm run test --bail --findRelatedTests"
     ],
     "*.md": [
       "prettier --single-quote --write"
