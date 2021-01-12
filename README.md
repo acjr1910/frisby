@@ -1,8 +1,10 @@
 # Frisby
 
-[comment]: ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
-[comment]: ![](https://img.shields.io/github/release/pandao/editor.md.svg)
+Small set of Javascript functional programming utilities.
 
-A small functional programming library.
+## List of available packages found here:
 
-More details coming soon...
+|                         |                                                                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [core](packages/core)   | Exposes functional programming base functions: **compose**, **curry** and **pipe**                               |
+| [utils](packages/utils) | Exposes utility functions, heavily inspired by Ramda and JS Functional Light: **pathOr**, **reduceObj** and more |
