@@ -1,6 +1,8 @@
-export default function trace(tag) {
-  return function traced(x) {
-    console.log(tag, x)
-    return x
-  }
+import curry from '../curry'
+
+function trace(tag, x) {
+  console.log(tag, x)
+  return x
 }
+
+export default curry(trace)
