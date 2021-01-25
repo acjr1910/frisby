@@ -25,6 +25,7 @@ Import the functions that you want to use from @frisby/core.
 ## Documentation
 
 - **compose**
+
   Partial application that executes functions from right to left.
 
   ```js
@@ -32,6 +33,7 @@ Import the functions that you want to use from @frisby/core.
   ```
 
 - **pipe**
+
   Partial application that executes functions from left to right.
 
   ```js
@@ -39,6 +41,7 @@ Import the functions that you want to use from @frisby/core.
   ```
 
 - **curry**
+
   Curries a function with arity equivalent to it's arguments length.
 
   ```js
@@ -52,5 +55,5 @@ Import the functions that you want to use from @frisby/core.
 
   ```js
   curriedFn(1, 2)
-  curriedFn(3)('I have received all my arguments 1,2,3')
+  curriedFn(3) // evaluates to => 'I have received all my arguments 1,2,3'
   ```
