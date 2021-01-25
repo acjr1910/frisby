@@ -1,6 +1,6 @@
 {
   "name": "@frisby/utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Frisby utility functions.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -18,7 +18,11 @@
     "utils"
   ],
   "author": "Agnaldo C. Junior",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajnior/frisby.git"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
