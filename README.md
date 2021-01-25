@@ -6,5 +6,5 @@ Small set of Javascript functional programming utilities.
 
 |                         |                                                                                                                  |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| [core](packages/core)   | Exposes functional programming base functions: **compose**, **curry** and **pipe**                               |
+| [core](packages/core)   | Exposes functional programming base functions: **compose**, **pipe** and **curry**                               |
 | [utils](packages/utils) | Exposes utility functions, heavily inspired by Ramda and Functional Light JS: **pathOr**, **reduceObj** and more |
