@@ -1,3 +1,3 @@
 export default function inc(x) {
-  return x + 1
+  return typeof x === 'number' ? x + 1 : x
 }
