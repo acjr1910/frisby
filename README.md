@@ -1,6 +1,6 @@
 # Frisby
 
-Small set of Javascript functional programming utilities.
+Javascript FP utilities.
 
 ## List of available packages found here:
 
