@@ -1,10 +1,15 @@
 # Frisby
 
-Small set of Javascript functional programming utilities.
+Frisby is a Javascript Functional Programming Library.
 
-## List of available packages found here:
+## Motivation
 
-|                         |                                                                                                                  |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| [core](packages/core)   | Small set of FP core functions                                                                                   |
-| [utils](packages/utils) | Exposes utility functions, heavily inspired by Ramda and Functional Light JS: **pathOr**, **reduceObj** and more |
+Coming soon...
+
+## Frisby packages:
+
+|                         |                                        |
+| ----------------------- | -------------------------------------- |
+| [core](packages/core)   | Core functional programming functions. |
+| [utils](packages/utils) | All curried utility functions.         |
+| [types](packages/types) | Coming soon...                         |
