@@ -1,6 +1,6 @@
 # @frisby/core
 
-Small set of FP core functions.
+Core FP functions. All functions are curried.
 
 ## Installing
 
@@ -16,44 +16,48 @@ $ yarn add @frisby/core
 
 ## Usage
 
-Import the functions that you want to use from @frisby/core.
+Import only the functions that you want to use from @frisby/core, since it's tree-shakeable.
 
-```js
-    import { compose } from @frisby/core
+```javascript
+import { compose, map } from @frisby/core
 ```
 
 ## Documentation
 
-- **compose**
+### curry
 
-  Partial application that executes functions from right to left.
+Curries a function with arity equivalent to it's arguments length.
 
-  ```js
-  compose(fn3, fn2, fn1)(value)
-  ```
+```javascript
+const fnToCurry = (arg1, arg2, arg3) => {
+  console.log('I have received all my arguments', arg1, arg2, arg3)
+}
+const curriedFn = curry(fnToCurry)
+```
 
-- **pipe**
+**curriedFn** is now curried with arity of 3;
 
-  Partial application that executes functions from left to right.
+```js
+curriedFn(1, 2)
+curriedFn(3) // evaluates to => 'I have received all my arguments 1,2,3'
+```
 
-  ```js
-  compose(fn1, fn2, fn3)(value)
-  ```
+### map, filter, reduce
 
-- **curry**
+Curried version of native JavaScript map, filter and reduce array functions.
 
-  Curries a function with arity equivalent to it's arguments length.
+### compose
 
-  ```js
-  const fnToCurry = (arg1, arg2, arg3) => {
-    console.log('I have received all my arguments', arg1, arg2, arg3)
-  }
-  const curriedFn = curry(fnToCurry)
-  ```
+Partial application that executes functions from right to left.
 
-  **curriedFn** is now curried with arity of 3;
+```javascript
+compose(fn3, fn2, fn1)(value)
+```
 
-  ```js
-  curriedFn(1, 2)
-  curriedFn(3) // evaluates to => 'I have received all my arguments 1,2,3'
-  ```
+### trace
+
+Log a value with a provided tag.
+
+```js
+trace('mytag', 3) // evaluates to => 'my tag 3'
+```
