@@ -4,7 +4,8 @@
   "description": "A small set of functions that makes functional programming using Javascript easier.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lerna": "lerna bootstrap"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "husky": "^4.3.7",
     "jest": "^26.6.3",
+    "lerna": "^3.22.1",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1"
   },
