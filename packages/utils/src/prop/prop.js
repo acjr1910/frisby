@@ -1,4 +1,7 @@
-// use core curry. add lerna
-export default function prop(property, object) {
+import { curry } from '@frisby/core'
+
+function prop(property, object) {
   return object[property]
 }
+
+export default curry(prop)

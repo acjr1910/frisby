@@ -1,4 +1,6 @@
-export default function pathOr(or = '', arrPath, obj) {
+import { curry } from '@frisby/core'
+
+function pathOr(or = '', arrPath, obj) {
   if (!arrPath.length || !obj) return or || ''
 
   return arrPath.reduce((accObj, value) => {
@@ -9,3 +11,5 @@ export default function pathOr(or = '', arrPath, obj) {
     return or
   }, obj)
 }
+
+export default curry(pathOr)
