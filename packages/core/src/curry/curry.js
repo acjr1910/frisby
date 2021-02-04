@@ -1,4 +1,4 @@
-export default function curry(fn) {
+function curry(fn) {
   let args = []
   return (function nextCurriedFn() {
     return function curried(nextArgs) {
@@ -8,3 +8,5 @@ export default function curry(fn) {
     }
   })()
 }
+
+export default curry

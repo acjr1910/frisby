@@ -1,4 +1,4 @@
-import { curry } from '../curry'
+import curry from '../curry'
 
 function always(a, b) {
   return a

@@ -1,0 +1,38 @@
+{
+  "name": "@frisby/containers",
+  "version": "1.0.3",
+  "description": "Frisby containers/monads.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "keywords": [
+    "functional",
+    "functional programming",
+    "compose",
+    "curry",
+    "utils"
+  ],
+  "author": "Agnaldo C. Junior",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajnior/frisby.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "jest": "^26.6.3",
+    "rollup": "^2.36.1"
+  },
+  "dependencies": {
+    "@frisby/core": "1.0.3"
+  }
+}
