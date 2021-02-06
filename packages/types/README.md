@@ -20,7 +20,7 @@ Import the functions that you want to use from @frisby/types.
 @frisby/types supports tree-shake.
 
 ```javascript
-import { compose, map } from @frisby/types
+import { Maybe } from @frisby/types
 ```
 
 ## Docs
