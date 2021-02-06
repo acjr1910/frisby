@@ -51,8 +51,24 @@ import { compose, map } from @frisby/core
 
 ### trace
 
+```javascript
+// trace :: String -> a -> a
+```
+
 ### map
+
+```javascript
+// map :: (a -> b) -> [a] -> [b]
+```
 
 ### filter
 
+```javascript
+// filter :: (a -> Bool) -> [a] -> [a]
+```
+
 ### reduce
+
+```javascript
+// reduce :: (b -> a -> b) -> b -> [a] -> b
+```
