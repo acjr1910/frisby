@@ -1,2 +1,7 @@
-export { default as Maybe } from './Maybe'
 export { default as Identity } from './Identity'
+export { default as Maybe } from './Maybe'
+export { default as Either } from './Either'
+export { Right } from './Either'
+export { Left } from './Either'
+export { default as Task } from './Task'
+export { default as IO } from './IO'
