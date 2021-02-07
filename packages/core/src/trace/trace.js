@@ -1,6 +1,6 @@
 import curry from '../curry'
 
-function trace(tag, x) {
+const trace = (tag, x) => {
   console.log(tag, x)
   return x
 }

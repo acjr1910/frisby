@@ -1,7 +1,5 @@
 import curry from '../curry'
 
-function always(a, b) {
-  return a
-}
+const always = (a, b) => a
 
 export default curry(always)

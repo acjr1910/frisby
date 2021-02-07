@@ -1,8 +1,8 @@
-export default function compose(...fns) {
-  return function composed(result) {
-    fns.reverse().forEach((fn) => {
-      result = fn(result)
-    })
-    return result
-  }
+const compose = (...fns) => (result) => {
+  fns.reverse().forEach((fn) => {
+    result = fn(result)
+  })
+  return result
 }
+
+export default compose
