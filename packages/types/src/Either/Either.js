@@ -1,4 +1,4 @@
-import { identity } from '@frisby/core;'
+import { identity } from '@frisby/core'
 
 class Either {
   constructor(x) {
