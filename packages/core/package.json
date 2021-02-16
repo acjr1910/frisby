@@ -1,7 +1,7 @@
 {
   "name": "@frisby/core",
-  "version": "2.0.0",
-  "description": "Frisby - Core functional programming functions.",
+  "version": "2.0.1",
+  "description": "Functional Programming Core Functions.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
