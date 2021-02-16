@@ -1,12 +1,12 @@
 function curry(fn) {
-  let args = []
-  return (function nextCurriedFn() {
-    return function curried(nextArgs) {
-      args = args.concat([nextArgs])
-      if (args.length >= fn.length) return fn(...args)
-      return nextCurriedFn()
+  const arity = fn.length
+  return function $curry(...args) {
+    if (args.length < arity) {
+      return $curry.bind(null, ...args)
     }
-  })()
+    // eslint-disable-next-line no-useless-call
+    return fn.call(null, ...args)
+  }
 }
 
 export default curry
