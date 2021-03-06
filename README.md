@@ -15,7 +15,7 @@ Constains a set of curried utility functions.
 ### [types](packages/types)
 
 In progress, not published yet.
-Will contains a set of data types including Pointed and Aplicative Functors as well Monads.
+Will come a set of data types including Pointed and Aplicative Functors as well Monads.
 
 ## Motivation
 
