@@ -6,7 +6,7 @@ Frisby is a Javascript Functional Programming Library.
 
 ### [core](packages/core)
 
-![functions-coverage](./packages/core/coverage/badge-functions.svg)
+![functions-coverage](packages/core/coverage/badge-functions.svg)
 
 Constains a set of core functional programming functions.
 
