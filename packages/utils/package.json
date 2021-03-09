@@ -31,6 +31,6 @@
     "rollup": "^2.36.1"
   },
   "dependencies": {
-    "@frisby/core": "1.0.3"
+    "@frisby/core": "2.0.1"
   }
 }

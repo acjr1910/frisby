@@ -1,5 +1,5 @@
 {
-  "name": "@frisby/containers",
+  "name": "@frisby/types",
   "version": "1.0.3",
   "description": "Frisby containers/monads.",
   "main": "dist/cjs/index.js",
@@ -33,6 +33,6 @@
     "rollup": "^2.36.1"
   },
   "dependencies": {
-    "@frisby/core": "1.0.5"
+    "@frisby/core": "2.0.1"
   }
 }
