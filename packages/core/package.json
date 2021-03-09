@@ -9,6 +9,8 @@
   ],
   "scripts": {
     "test": "jest",
+    "test:coverage": "npm test -- --coverage",
+    "test:badges": "npm run test  && jest-coverage-badges",
     "build": "rollup -c",
     "dev": "rollup -c -w"
   },
@@ -33,6 +35,7 @@
     "rollup": "^2.36.1"
   },
   "dependencies": {
-    "@frisby/types": "1.0.3"
+    "@frisby/types": "1.0.3",
+    "jest-coverage-badges": "^1.1.2"
   }
 }
