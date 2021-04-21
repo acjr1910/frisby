@@ -71,7 +71,7 @@ It supports tree-shaking.
 
 - **reduceObj**
 
-  Returns a reduced object(HashMap).
+  Reduces an object (HashMap).
 
 ```js
 const obj = {
