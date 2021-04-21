@@ -17,7 +17,7 @@ $ yarn add @frisby/core
 ## Usage
 
 Import the functions that you want to use from @frisby/core.
-@frisby/core supports tree-shake.
+It supports tree-shaking.
 
 ```javascript
 import { compose, map } from @frisby/core
@@ -37,37 +37,37 @@ import { compose, map } from @frisby/core
 // compose :: ((a -> b), (b -> c),  ..., (y -> z)) -> a -> z
 ```
 
-### always
-
-```javascript
-// always :: a -> b -> a
-```
-
 ### identity
 
 ```javascript
 // identity :: x -> x
 ```
 
-### trace
+### always - (_curried fn_)
+
+```javascript
+// always :: a -> b -> a
+```
+
+### trace - (_curried fn_)
 
 ```javascript
 // trace :: String -> a -> a
 ```
 
-### map
+### map - (_curried fn_)
 
 ```javascript
 // map :: (a -> b) -> [a] -> [b]
 ```
 
-### filter
+### filter - (_curried fn_)
 
 ```javascript
 // filter :: (a -> Bool) -> [a] -> [a]
 ```
 
-### reduce
+### reduce - (_curried fn_)
 
 ```javascript
 // reduce :: (b -> a -> b) -> b -> [a] -> b
