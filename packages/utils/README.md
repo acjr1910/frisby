@@ -1,6 +1,6 @@
 # @frisby/utils
 
-Set of utility functions.
+Utility functions.
 
 ## Installing
 
@@ -17,6 +17,7 @@ $ yarn add @frisby/utils
 ## Usage
 
 Import the functions that you want to use from @frisby/utils.
+It supports tree-shaking.
 
 ```js
     import { reduceObj } from @frisby/utils
@@ -35,7 +36,7 @@ Import the functions that you want to use from @frisby/utils.
 
 - **omit**
 
-  Returns an object without a given prop name. Same functionality of Ramda's omit.
+  Returns an object without the given prop name.
 
   ```js
   const user = {
@@ -70,32 +71,32 @@ Import the functions that you want to use from @frisby/utils.
 
 - **reduceObj**
 
-  Given a reducer function, an initial value and an object, reduces an object.
+  Returns a reduced object(HashMap).
 
-  ```js
-  const obj = {
-    firstName: {
-      isActive: true,
-      value: 'first',
-    },
-    lastName: {
-      isActive: true,
-      value: 'last',
-    },
-    address: {
-      isActive: false,
-      street: 'street',
-      number: 1,
-    },
-  }
+```js
+const obj = {
+  firstName: {
+    isActive: true,
+    value: 'first',
+  },
+  lastName: {
+    isActive: true,
+    value: 'last',
+  },
+  address: {
+    isActive: false,
+    street: 'street',
+    number: 1,
+  },
+}
 
-  reduceObj(
-    (acc, curr) => {
-      if (curr.isActive) return { ...acc, [curr.value]: curr }
-      return acc
-    },
-    {},
-    objToReduce
-  )
-  // evaluates to => { first: { isActive: true, value: 'first' } last: { isActive: true, value: 'last' } }
-  ```
+reduceObj(
+  (acc, curr) => {
+    if (curr.isActive) return { ...acc, [curr.value]: curr }
+    return acc
+  },
+  {},
+  objToReduce
+)
+// evaluates to => { first: { isActive: true, value: 'first' } last: { isActive: true, value: 'last' } }
+```
