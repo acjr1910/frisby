@@ -23,51 +23,53 @@ It supports tree-shaking.
 import { compose, map } from @frisby/core
 ```
 
-## Docs
+## Functions
 
-### curry
+- **curry**
 
 ```javascript
 // curry :: ((a, b, ...) -> c) -> a -> b -> ... -> c
 ```
 
-### compose
+- **compose**
 
 ```javascript
 // compose :: ((a -> b), (b -> c),  ..., (y -> z)) -> a -> z
 ```
 
-### identity
+- **identity**
 
 ```javascript
 // identity :: x -> x
 ```
 
-### always - (_curried fn_)
+## Curried functions
+
+- **always**
 
 ```javascript
 // always :: a -> b -> a
 ```
 
-### trace - (_curried fn_)
+- **trace**
 
 ```javascript
 // trace :: String -> a -> a
 ```
 
-### map - (_curried fn_)
+- **map**
 
 ```javascript
 // map :: (a -> b) -> [a] -> [b]
 ```
 
-### filter - (_curried fn_)
+- **filter**
 
 ```javascript
 // filter :: (a -> Bool) -> [a] -> [a]
 ```
 
-### reduce - (_curried fn_)
+- **reduce**
 
 ```javascript
 // reduce :: (b -> a -> b) -> b -> [a] -> b
