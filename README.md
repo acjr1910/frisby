@@ -1,6 +1,6 @@
 # Frisby
 
-Frisby is a Javascript Functional Programming Library.
+Javascript Functional Programming Library.
 
 ## Packages
 
@@ -8,16 +8,16 @@ Frisby is a Javascript Functional Programming Library.
 
 <!-- ![functions-coverage](packages/core/coverage/badge-functions.svg) -->
 
-Constains a set of core functional programming functions.
+Essencial FP functions.
 
 ### [utils](packages/utils)
 
-Constains a set of curried utility functions.
+Utility functions.
 
-### [types](packages/types)
+<!-- ### [types](packages/types)
 
 In progress, not published yet.
-Data types included: Identity, Maybe, Either, Task and IO.
+Data types included: Identity, Maybe, Either, Task and IO. -->
 
 ## Motivation
 
