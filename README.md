@@ -6,11 +6,7 @@ Javascript Functional Library.
 
 Essencial FP functions.
 
-### [utils](packages/utils)
-
-Utility functions.
-
 ### [types](packages/types)
 
-In progress, not published yet.
+In progress.
 Data types included: Identity, Maybe, Either, Task and IO.
