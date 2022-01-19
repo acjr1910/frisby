@@ -1,27 +1,4 @@
-# @frisby/core
-
 Core functional programming functions.
-
-## Installing
-
-@frisby/core can be installed through npm or yarn:
-
-```
-$ npm install @frisby/core
-```
-
-```
-$ yarn add @frisby/core
-```
-
-## Usage
-
-Import the functions that you want to use from @frisby/core.
-It supports tree-shaking.
-
-```javascript
-import { compose, map } from @frisby/core
-```
 
 ## Functions
 
